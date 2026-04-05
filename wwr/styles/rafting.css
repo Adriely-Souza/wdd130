@@ -78,3 +78,19 @@ h1 {
     float: right;
     width: 125px;
 }
+
+#galeria_image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.image {
+    margin: 10px;
+    width: 200px;
+    height: auto;
+
+}
