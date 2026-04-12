@@ -36,6 +36,29 @@ li {
     list-style-type: none;
 }
 
+#title {
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+    width: 840px;
+    margin: 0 auto;
+}
+
+h1,
+h2 {
+    font-family: var(--heading-font);
+    color: black
+}
+
 nav button {
     background-color: white;
     border: 1px solid #000;
@@ -50,10 +73,14 @@ h1 {
 }
 
 div iframe {
+    height: 350px;
+    width: 500px;
+    background: #e0e0e0;
     display: flex;
     align-items: center;
-    width: 250px;
-    height: 250px;
+    justify-content: last baseline;
+    border-radius: 4px;
+    margin-left: 110px;
 }
 
 div form-goup {
@@ -67,11 +94,21 @@ div form-goup {
     margin-bottom: 20%;
 }
 
-.contact-form-container {
+main form {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    flex-wrap: 350px;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.left,
+.right {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    padding: 20px;
 }
 
 form {
@@ -104,12 +141,6 @@ textarea {
     margin-top: 20px;
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: black
-}
-
 .profile-card {
     text-align: center;
 }
@@ -127,6 +158,11 @@ h2 {
     display: block;
     width: 100%;
     height: auto;
+}
+
+#title h1 {
+
+    color: black;
 }
 
 .hero article img {
@@ -155,4 +191,69 @@ section,
 article {
     margin: 10px;
     padding: 5px;
+}
+
+.map-iframe .form-group {
+    height: 200px;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    margin-top: 20px;
+
+}
+
+.container {
+    border: 1px solid #999;
+    background-color: #e0e0e0;
+    padding: 20px 40px;
+    text-align: center;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 800px;
+}
+
+.profile-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.image-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #c0c0c0;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.image-placeholder::after {
+    content: '👤';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 14px;
+    background: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.profile-card p {
+    font-size: 14px;
+    margin: 0;
+    color: #333;
+
 }

@@ -34,47 +34,71 @@
         <p>info@whitewater.com</p>
     </div>
 
-    <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12185.634865985896!2d-111.67799674999999!3d40.22221389999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sus!4v1775525878951!5m2!1spt-BR!2sus"
-          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
 
     <main>
         <form>
-            <div class="form-group">
+            <div class="map left">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d12185.634865985896!2d-111.67799674999999!3d40.22221389999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sus!4v1775525878951!5m2!1spt-BR!2sus"
+                  width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="form-group right">
                 <label for="name">Name</label>
                 <input type="text" id="name" placeholder="Placeholder">
-            </div>
 
-            <div class="form-group">
                 <label for="email">Email</label>
                 <input type="email" id="email" placeholder="Placeholder">
-            </div>
 
-            <fieldset>
-                <legend>Message Purpose</legend>
-                <label><input type="radio" name="purpose" value="general" checked> General
-                    Inquiry</label>
-                <label><input type="radio" name="purpose" value="reservation"> Reservation
-                    Question</label>
-                <label><input type="radio" name="purpose" value="website"> Website
-                    Suggestion</label>
-            </fieldset>
 
-            <div class="form-group2">
+                <fieldset>
+                    <legend>Message Purpose</legend>
+                    <label><input type="radio" name="purpose" value="general" checked> General
+                        Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation
+                        Question</label>
+                    <label><input type="radio" name="purpose" value="website"> Website
+                        Suggestion</label>
+                </fieldset>
+
                 <label for="message">Message</label>
                 <textarea id="message" placeholder="Type here"></textarea>
-            </div>
 
-            <div class="checkbox-group">
-                <input type="checkbox" id="newsletter" checked>
-                <label for="newsletter">Please Subscribe me to the monthly newsletter</label>
-            </div>
 
-            <button type="submit">Get in Touch!</button>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="newsletter" checked>
+                    <label for="newsletter">Please Subscribe me to the monthly newsletter</label>
+                </div>
+
+                <button type="submit">Get in Touch!</button>
+                </di>
         </form>
+
+        <div class="container">
+            <h2>We Are Here to Serve You</h2>
+            <div class="profile-card">
+                <div class="image-placeholder">
+                    <span class="icon">👤</span>
+                </div>
+                <p>Employee Profile</p>
+            </div>
+
+            <!-- Profile Card 2 -->
+            <div class="profile-card">
+                <div class="image-placeholder">
+                    <span class="icon">👤</span>
+                </div>
+                <p>Employee Profile</p>
+            </div>
+
+            <!-- Profile Card 3 -->
+            <div class="profile-card">
+                <div class="image-placeholder">
+                    <span class="icon">👤</span>
+                </div>
+                <p>Employee Profile</p>
+            </div>
 
     </main>
     <footer>
