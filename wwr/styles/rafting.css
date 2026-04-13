@@ -11,11 +11,19 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    background-color: #fdfae6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #c0c0c0;
+    line-height: 1, 6;
     margin: 0;
     text-align: center;
+    color: var(--text-color);
 }
 
 header {
@@ -38,12 +46,6 @@ li {
 
 #title {
     align-items: center;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
 header,
@@ -119,7 +121,7 @@ textarea {
 }
 
 .employee-section {
-    border: 1px solid #444;
+    border: 1px solid #c0c0c0;
     margin: 40px auto;
     width: 80%;
     padding: 20px;
@@ -236,8 +238,8 @@ article {
 .image-placeholder {
     width: 100px;
     height: 100px;
-    background-color: #c0c0c0;
-    border: 1px solid #aaa;
+    background-color: white;
+    border: 1px solid white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -261,4 +263,30 @@ article {
     margin: 0;
     color: #333;
 
+}
+
+table {
+    margin: auto;
+    margin-right: auto;
+    border: 2px solid rgb(140 140 140);
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    align-items: center;
+
+}
+
+th,
+td {
+    border: 1px solid rgb(160 160 160);
+    padding: 8px 10px;
+    text-align: center;
+
+}
+
+thead th,
+tfoot tr {
+    background-color: #000;
+    color: #fff;
+    font-weight: 700;
 }
