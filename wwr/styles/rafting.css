@@ -11,21 +11,29 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fdfae6;
+    margin: 0;
+    text-align: center;
+}
+
 header {
+    background-color: #8faadb;
+    padding: 30px;
     display: flex;
-    background-color: var(--primary-color);
-    color: var(--accent2-color)
+    justify-content: center;
+    align-items: center;
 }
 
 ul {
     display: flex;
-    gap: 50%;
+    gap: 20%;
 }
 
 li {
-    width: 10%;
+    width: 20%;
     list-style-type: none;
-
 }
 
 #title {
@@ -38,11 +46,6 @@ li {
     box-sizing: border-box;
 }
 
-body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-}
-
 header,
 main,
 footer {
@@ -50,18 +53,86 @@ footer {
     margin: 0 auto;
 }
 
-h1,
-h2 {
-    font-family: var(--heading-font);
-    color: black
+nav button {
+    background-color: white;
+    border: 1px solid #000;
+    padding: 2px 20px;
+    margin: 0 5px;
+    cursor: pointer;
 }
 
-nav,
-p,
-section,
-article {
-    margin: 16px;
+h1 {
+    color: #444;
+    margin-top: 30px;
+}
+
+div iframe {
+    height: 350px;
+    width: 500px;
+    background: #e0e0e0;
+    display: flex;
+    align-items: center;
+    justify-content: last baseline;
+    border-radius: 4px;
+    margin-left: 110px;
+}
+
+div form-goup {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info {
+    font-size: 0.9em;
+    line-height: 1.4;
+    margin-bottom: 20%;
+}
+
+main form {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-content: flex-start;
+    flex-wrap: 350px;
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 40px;
+}
+
+form {
+    flex: 1;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+    justify-self: start;
+    text-justify: auto;
+    text-align: left;
+    width: 300px
+}
+
+input,
+textarea {
+    width: 100%;
     padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #888;
+    background-color: #e8e8e8;
+}
+
+.employee-section {
+    border: 1px solid #444;
+    margin: 40px auto;
+    width: 80%;
+    padding: 20px;
+}
+
+.employee-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.profile-card {
+    text-align: center;
 }
 
 .socialmedia a {
@@ -70,6 +141,7 @@ article {
 
 .hero {
     position: relative;
+
 }
 
 .hero img {
@@ -81,7 +153,6 @@ article {
 #title h1 {
 
     color: black;
-
 }
 
 .hero article img {
@@ -93,14 +164,101 @@ article {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-
+    align-items: end;
+    gap: 5px;
+    padding: 1px;
 }
 
 .image {
     margin: 10px;
     width: 200px;
     height: auto;
+
+}
+
+nav,
+p,
+section,
+article {
+    margin: 10px;
+    padding: 5px;
+}
+
+.map-iframe {
+    display: flex;
+    justify-content: end;
+    height: 100px;
+    background: #e0e0e0;
+    align-items: end;
+    border-radius: 10px;
+    margin: 30px;
+    padding: 20px;
+
+}
+
+.map {
+    justify-content: end;
+    margin-bottom: 20px;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    text-align: end;
+    gap: 100px;
+    padding: 10px;
+    text-align: center;
+    font-family: sans-serif;
+
+}
+
+.h2 {
+    justify-items: flex-start;
+    margin-bottom: 30px;
+    font-weight: bold;
+    justify-content: left;
+}
+
+.profile-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.image-placeholder {
+    width: 100px;
+    height: 100px;
+    background-color: #c0c0c0;
+    border: 1px solid #aaa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.image-placeholder::after {
+    content: '👤';
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 14px;
+    background: white;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+.profile-card p {
+    font-size: 14px;
+    margin: 0;
+    color: #333;
 
 }
