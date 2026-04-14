@@ -21,7 +21,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #c0c0c0;
     line-height: 1, 6;
-    margin: 0;
+    margin: 0px;
     text-align: center;
     color: var(--text-color);
 }
@@ -91,9 +91,8 @@ div form-goup {
 }
 
 main form {
-    display: flex;
-    justify-content: flex-start;
-    gap: 10px;
+    justify-content: left;
+    gap: 20px;
     align-content: flex-start;
     flex-wrap: 350px;
     flex-direction: column;
@@ -102,11 +101,8 @@ main form {
 }
 
 form {
-    flex: 1;
-    flex-direction: column-reverse;
-    align-content: flex-end;
-    justify-self: start;
-    text-justify: auto;
+    justify-content: left;
+    align-content: left;
     text-align: left;
     width: 300px
 }
@@ -188,11 +184,11 @@ article {
 
 .map-iframe {
     display: flex;
-    justify-content: end;
+    justify-content: left;
     height: 100px;
     background: #e0e0e0;
     align-items: end;
-    border-radius: 10px;
+    border-radius: 50px;
     margin: 30px;
     padding: 20px;
 
@@ -205,64 +201,29 @@ article {
 
 .container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     text-align: end;
-    gap: 100px;
-    padding: 10px;
+    gap: 10px;
+    padding: 1px;
     text-align: center;
     font-family: sans-serif;
-
 }
 
-.h2 {
-    justify-items: flex-start;
-    margin-bottom: 30px;
-    font-weight: bold;
+.images-employee {
+    display: flex;
     justify-content: left;
-}
-
-.profile-row {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.profile-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    cursor: pointer;
-
-}
-
-.image-placeholder {
+    align-content: center;
     width: 100px;
-    height: 100px;
-    background-color: white;
-    border: 1px solid white;
+    height: 200px;
+    gap: 50px;
+
+}
+
+.profile1 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-    position: relative;
-}
-
-.image-placeholder::after {
-    content: '👤';
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    font-size: 14px;
-    background: white;
-    border-radius: 50%;
-    padding: 2px;
-}
-
-.profile-card p {
-    font-size: 14px;
-    margin: 0;
-    color: #333;
-
+    justify-content: left;
+    text-align: end;
+    gap: 100px;
 }
 
 table {
